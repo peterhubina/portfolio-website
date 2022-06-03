@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <head>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Peter Hubina</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Technologies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </head>
+
+    <main>
+      <div class="container">
+        <div class="intro-text text-center my-5">
+          <h1 class="h1 title">I'm Peter Hubina</h1>
+          <p class="description">
+            I'm a self-taught Web Developer. I'm focusing on front end.
+          </p>
+        </div>
+
+        <div class="projects">
+          <div class="row my-5">
+            <div class="col">
+              <div class="projects d-flex justify-content-around">
+                <button type="button" class="btn btn-secondary">
+                  Wordpress
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  Web Applications
+                </button>
+                <button type="button" class="btn btn-secondary">Plugins</button>
+                <button type="button" class="btn btn-secondary">
+                  Landing Pages
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="tile col-12 col-md-6 col-lg-4 thumb">
+              <a href="#" class="thumbnail">
+                <img
+                  src="img/color-generator.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
+                <!--
+                <div class="details">
+                  <span class="title">Project</span>
+                  <span class="description">Project Description</span>
+                </div>
+                -->
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 thumb">
+              <a href="#" class="thumbnail">
+                <img
+                  src="img/keyboard.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 thumb">
+              <a href="#" class="thumbnail">
+                <img
+                  src="img/tip-calculator.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-secondary d-block m-auto my-5">
+            View more
+          </button>
+        </div>
+
+        <!-- Technologies -->
+        <div class="technologies"></div>
+        <div class="text-center mb-5">
+          <h2>Technologies that i use</h2>
+          <p>Tools that I'm comfortable with and use on most of projects</p>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 py-5 text-center">
+            <i class="fa fa-code fa-2xl"></i>
+            <h3>HTML</h3>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 py-5 text-center">
+            <i class="fa fa-solid fa-code fa-2xl"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 py-5 text-center">
+            <i class="fa fa-solid fa-code fa-2xl"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 py-5 text-center">
+            <i class="fa fa-solid fa-code fa-2xl"></i>
+            <h3>PHP</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact d-flex">
+        <div class="contact-text">
+          <h2>Contact me!</h2>
+          <p>
+            If you're interested in working with me, contact me on my e-mail.
+          </p>
+          <button class="btn btn-light" type="button">Contact Me</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-item">
+              <h4>About me</h4>
+              <p>Self-Taught Front-End Developer</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-item">
+              <h4>Recent posts</h4>
+              <p>No posts yet.</p>
+            </div>
+          </div>
+          <div class="col">
+            <h4>Contact</h4>
+            <p>peter.hubina1@gmail.com</p>
+            <div class="socials d-flex align-items-center">
+              <a class="social-link" href="#"
+                ><i class="fa-brands fa-twitter fa-xl"></i
+              ></a>
+              <a class="social-link" href="#"
+                ><i class="fa-brands fa-linkedin fa-xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
