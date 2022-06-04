@@ -1,4 +1,4 @@
-$anim-speed: 0.3s;
+@use "variables";
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -11,7 +11,7 @@ $anim-speed: 0.3s;
     z-index: 1;
 
     &::after {
-        content: "";
+        content: ""; 
         background: #d2fcec;
         width: 100%;
         height: 40%;
@@ -19,6 +19,62 @@ $anim-speed: 0.3s;
         top: 5px;
         left: 0;
         z-index: -1;
+    }
+}
+
+main {
+    .container {
+        .intro-text {
+            height: 25vh;
+        }
+
+        .projects {
+            .row {
+                @media (max-width: 992px) {
+                    gap: 1rem 0;
+                }
+
+                .tile {
+                    &:hover {
+                        .project-img {
+                            opacity: 0.3;
+                        }
+
+                        .details {
+                            opacity: 1
+                        }
+                    }
+
+                    position: relative;
+
+                    .project-img {
+                        opacity: 1;
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        transition: .5s ease;
+                        backface-visibility: hidden;
+                        //box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+                    }
+
+                    .details {
+                        position: absolute;
+                        opacity: 0;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transition: .5s ease;
+                        text-align: center;
+
+                        .btn {
+                            background-color: #05d584;
+                            border-color: #05d584;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -45,32 +101,9 @@ $anim-speed: 0.3s;
         display: flex;
         height: 25rem;
         align-items: center;
-    }
-}
 
-.footer-2 {
-    
-    height: 5rem;
-
-    & > div {
-        
-        justify-content: space-between;
-
-        padding: 0 1rem;
-
-        p {
-            margin: 0;
-            text-align: center;
+        .row {
+            width: 100%;
         }
-
-        .socials {
-            gap: .75rem;
-        }
-    }
-}
-
-.thumbnail {
-    img {
-        transition: transform 0.5s ease;
     }
 }

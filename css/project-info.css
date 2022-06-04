@@ -1,0 +1,13 @@
+main .article-header h1 {
+  text-align: center;
+}
+
+main .article-header .main-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=project-info.css.map */
